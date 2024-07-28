@@ -18,7 +18,7 @@ def create_tables():
 
 async def get_session():
     with Session(engine) as session:
-        yield session
+         yield session
 
 @asynccontextmanager
 async def life_span(app: FastAPI):
